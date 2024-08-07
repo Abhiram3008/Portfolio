@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}   
+
+.logo{
+    width: 160px;
+}
+
+.listitems{
+    list-style: none;
+    display: inline;
+    margin-left: 0px 60px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+.homecontent{
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Kanit", sans-serif;
+}
+#name{
+    font-family: "Kanit", sans-serif;
+    color: gold;
+}
+#userdetail{
+    line-height: 1.2;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.homeimages{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.homeimages:hover #shape{
+    bottom: 70px;
+}
+.homeimages:hover #girl{
+    left: 40%;
+}
+#About{
+    margin: 20% 8% 0 8%;
+}
+.sectionHead{
+    text-align: center;
+}
+.mainHead{
+    font-size: 30px;
+}
+.subHead{
+    font-size: 20px;
+    color: green;
+}
+.aboutBody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+.img1{
+    width: 80%;
+}
+
+.aboutContent{
+    font-size: 20px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+#skill{
+    margin: 10% 8% 0px 8%;
+}
+.skillcontent{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barHead,.barPercent{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orange;
+    width: 92%;
+}
+.cssbar{
+    background-color: orange;
+    width: 80%;
+}
+.jsbar{
+    background-color: orange;
+    width: 60%;
+}
+.reactbar{
+    background-color: orange;
+    width: 50%;
+}
+
+.img2{
+    width: 80%;
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.Icons{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 1.8rem;
+}
+.skillimage{
+    width: 80%;
+    margin: 10%;
+}
+.Icons:hover{
+    background-image: linear-gradient(to bottom right,red,yellow,purple,green);
+    animation: rotate 3s;
+}
+.Icons:hover .brands{
+    color: white;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-style: 600;
+}
+
+.uparrow{
+    float: right;
+    margin: -30px 20px 40px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: antiquewhite;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
